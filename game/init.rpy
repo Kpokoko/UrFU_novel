@@ -2,6 +2,8 @@ $ renpy.music.set_volume(0.6)
 
 
 
+
+
 define maincharacter = Character("[gg_name]", image="gg", color="#44e010", callback=name_callback, cb_name="gg")
 define seva = Character("Сева", image="seva", color="#676346", callback=name_callback, cb_name="seva")
 define kostya = Character("Костян", image="kostyan", color="#25292c", callback=name_callback, cb_name="kostyan")

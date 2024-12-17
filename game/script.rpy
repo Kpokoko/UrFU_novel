@@ -1,4 +1,21 @@
+init python:
+    class MyCharacter:
+        def __init__(self, name, hp, mind, healing_items, mind_items, damaging_items):
+            self.name = name
+            self.hp = hp
+            self.mind = mind
+            self.healing_items = healing_items
+            self.mind_items = mind_items
+            self.damaging_items = damaging_items
+
+        def perform_attack(self, target, damage):
+            target.hp -= damage
+            if target.hp < 0:
+                target.hp = 0
+
+
 label start:
+    $ import random
     stop music fadeout 1.0
     $ gg_name = renpy.input("Как зовут вашего персонажа?\n")
     pause 1.0
@@ -29,6 +46,8 @@ label start:
     with move
     voice "main_character/start_lines_a_WEEK.ogg"
     maincharacter "{cps=100}НЕДЕЛЯ?!{/cps}"
+
+    call start_battle
 
     play music mus_aWeekNoWay
     scene bg ggroom_bright

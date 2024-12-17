@@ -1,26 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 3, in script
-    $ gg_sex = renpy.input("Кого пола будет ваш персонаж?\nВеедите М или Ж\n").Upper()
-  File "game/script.rpy", line 3, in <module>
-    $ gg_sex = renpy.input("Кого пола будет ваш персонаж?\nВеедите М или Ж\n").Upper()
-AttributeError: 'str' object has no attribute 'Upper'
+  File "game/bossfight.rpy", line 6, in script call
+    call player_turn
+  File "game/bossfight.rpy", line 63, in script
+    $ player.hp = math_max(100, player.hp)
+  File "game/bossfight.rpy", line 63, in <module>
+    $ player.hp = math_max(100, player.hp)
+NameError: name 'math_max' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 3, in script
-    $ gg_sex = renpy.input("Кого пола будет ваш персонаж?\nВеедите М или Ж\n").Upper()
-  File "C:\Users\user\OneDrive\Рабочий стол\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
+  File "game/bossfight.rpy", line 6, in script call
+    call player_turn
+  File "game/bossfight.rpy", line 63, in script
+    $ player.hp = math_max(100, player.hp)
+  File "C:\Users\User\Desktop\adsdsadassadsadsadas\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\user\OneDrive\Рабочий стол\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+  File "C:\Users\User\Desktop\adsdsadassadsadsadas\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 3, in <module>
-    $ gg_sex = renpy.input("Кого пола будет ваш персонаж?\nВеедите М или Ж\n").Upper()
-AttributeError: 'str' object has no attribute 'Upper'
+  File "game/bossfight.rpy", line 63, in <module>
+    $ player.hp = math_max(100, player.hp)
+NameError: name 'math_max' is not defined
 
-Windows-10-10.0.22631 AMD64
-Ren'Py 8.3.2.24090902
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.4.24120703
 Dead by Deadline 
-Sat Dec  7 16:05:32 2024
+Tue Dec 17 17:17:14 2024

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 4: reached end of line when expecting ':'.
-    while gg_sex not in "ЖМмж"
-                              ^
+File "game/bossfight.rpy", line 45: choice menuitem expects a non-empty block.
+    "Назад":
+            ^
 
-Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Dec  7 16:06:03 2024
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Tue Dec 17 16:51:38 2024
